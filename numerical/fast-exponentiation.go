@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
+// Compute a^n using binary representation of n
 func fastExp(a int, n int) int {
 	w := 1
 	for n > 0 {
-		if n & 1 == 1 {
+		if n&1 == 1 {
 			w *= a
 		}
 
